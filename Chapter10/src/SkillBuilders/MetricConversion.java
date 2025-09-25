@@ -1,7 +1,5 @@
 package SkillBuilders;
-
 import java.awt.EventQueue;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
@@ -15,14 +13,10 @@ import javax.swing.DefaultComboBoxModel;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-
 public class MetricConversion extends JFrame {
-
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-	private JTextField Dis;
 	private JButton btnNewButton;
-
 	/**
 	 * Launch the application.
 	 */
@@ -38,7 +32,6 @@ public class MetricConversion extends JFrame {
 			}
 		});
 	}
-
 	/**
 	 * Create the frame.
 	 */
@@ -60,41 +53,46 @@ public class MetricConversion extends JFrame {
 		lblNewLabel.setBounds(126, 37, 180, 33);
 		contentPane.add(lblNewLabel);
 		
-		Dis = new JTextField();
-		Dis.setBounds(114, 165, 204, 85);
-		contentPane.add(Dis);
-		Dis.setColumns(10);
-		
 		btnNewButton = new JButton("Submit");
 		btnNewButton.setBackground(new Color(0, 255, 255));
 		btnNewButton.setForeground(new Color(64, 0, 64));
 		btnNewButton.setFont(new Font("Tahoma", Font.PLAIN, 14));
 		btnNewButton.setBounds(156, 117, 126, 37);
 		contentPane.add(btnNewButton);
-
 		
+		JTextArea Dis = new JTextArea();
+		Dis.setBackground(Color.WHITE);
+		Dis.setBounds(59, 165, 330, 74);
+		contentPane.add(Dis);
+		
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
 		
 		
 		
 		if(conversionChoice.getSelectedItem().equals("Inches to Centimeters"))
 		{
-			Dis.setText("1 inch = 2.54 centimeters ");
+			Dis.setText("1 inch = 2.54 centimeters");
 		}
 		else if(conversionChoice.getSelectedItem().equals("Feet to Meters"))
 		{
-			Dis.setText("1 foot = 0.3048");
+			Dis.setText("1 foot = 0.3048 meters");
 		}
 		else if(conversionChoice.getSelectedItem().equals("Gallons to Liters"))
 		{
 			Dis.setText("1 Gallon = 4.5461 Liters");
 		}
-		else if(conversionChoice.getSelectedItem().equals("Gallons to Liters"))
+		else if(conversionChoice.getSelectedItem().equals("Pounds to Kilograms"))
 		{
-			Dis.setText("1 Pound = 0.4536");
+			Dis.setText("1 Pound = 0.4536 Kilograms");
+		}
+		else
+		{
+			Dis.setText("");
 		}
 		
-		
-		
-		
-	}
-}
+		}
+		});
+		}		
+		}
+
