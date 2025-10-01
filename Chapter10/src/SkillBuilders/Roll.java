@@ -39,9 +39,17 @@ public class Roll {
            public void actionPerformed(ActionEvent e) {
                Random rand = new Random();
                int newRoll = rand.nextInt(6) + 1; // 1–6
-               // Build path string like your Demo314
-               String path = "../Chapter10/src/Images/Dice_" + newRoll + ".png";
-               Image.setIcon(new ImageIcon(path));
+             
+        
+               
+               ImageIcon d1 = new ImageIcon("../Chapter10/src/Roll_Images/die1.tif");
+               ImageIcon d2 = new ImageIcon("../Chapter10/src/Roll_Images/die2.tif");
+               ImageIcon d3 = new ImageIcon("../Chapter10/src/Roll_Images/die3.tif");
+               ImageIcon d4 = new ImageIcon("../Chapter10/src/Roll_Images/die4.tif");
+               ImageIcon d5 = new ImageIcon("../Chapter10/src/Roll_Images/die5.tif");
+               ImageIcon d6 = new ImageIcon("../Chapter10/src/Roll_Images/die6.tif");
+               
+               
            }
        });
    }
