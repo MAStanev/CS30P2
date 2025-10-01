@@ -56,7 +56,7 @@ public class Test_Roll {
 		
 		
 		frame = new JFrame();
-		frame.setBounds(100, 100, 574, 572);
+		frame.setBounds(100, 100, 574, 554);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
@@ -70,7 +70,7 @@ public class Test_Roll {
 		panel.add(dieFace);
 		
 		JLabel dieFace2 = new JLabel("");
-		dieFace2.setBounds(266, 235, 258, 239);
+		dieFace2.setBounds(255, 209, 258, 239);
 		panel.add(dieFace2);
 		
 		JButton btnNewButton = new JButton("Roll Die");
