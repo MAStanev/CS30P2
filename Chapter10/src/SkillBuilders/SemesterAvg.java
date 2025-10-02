@@ -76,7 +76,7 @@ public class SemesterAvg {
                    double g1 = Double.parseDouble(textField.getText());
                    double g2 = Double.parseDouble(textField_1.getText());
                    double g3 = Double.parseDouble(textField_2.getText());
-                   double avg = (g1 + g2 + g3) / 3.0;
+                   double avg = (g1 + g2 + g3) / 3;
                    Dis.setText(String.format("Average: %.2f", avg));
                } catch (NumberFormatException ex) {
                    Dis.setText("Enter valid numbers!");
