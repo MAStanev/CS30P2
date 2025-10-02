@@ -92,8 +92,8 @@ public class Roll {
             	   Image.setIcon(d6);  
                }  	   
 
-// Second dice
- int newRoll2 = rand.nextInt(6) + 1; // 1–6	   
+               // Second dice
+               int newRoll2 = rand.nextInt(6) + 1; // 1–6	   
             
             if (newRoll2 == 1) {
             	Image_1.setIcon(d1);
