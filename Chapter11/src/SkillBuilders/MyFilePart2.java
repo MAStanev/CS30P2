@@ -31,5 +31,22 @@ public class MyFilePart2
 				System.out.println("IOException: " + e.getMessage());
 			}
 		}
+		
+	System.out.println("Would you like to (K)eep or (D)elete the file");
+		response = input.next();
+		
+		
+		if(response.equalsIgnoreCase("D"))
+		{	
+			if(textFile.delete())
+			{
+				System.out.println("File is deleted");
+			}
+		}
+		 else 
+		{
+			System.out.println("File is kept and stays the same");
+		}
+		}
 	}
-}
+	
