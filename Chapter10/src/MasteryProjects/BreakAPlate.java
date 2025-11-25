@@ -1,6 +1,6 @@
 /*
 Program: BreakAPlate.java
-Last Date of this Revision: November 5, 2025 - Updated code to meet coding standards & added ChatGPT transcript
+Last Date of this Revision: November 5, 2025 - Updated code to meet coding standards 
 Purpose: This application simulates a game booth at a carnival
 Author: Michael Stanev
 School: CHHS
