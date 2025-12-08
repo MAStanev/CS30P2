@@ -16,8 +16,8 @@ public class UEmployeeMain {
     public static void main(String[] args) {
 
         // Create one Faculty member and one Staff object
-        Faculty emp1 = new Faculty("Alice", "Johnson", 75000);
-        Staff emp2 = new Staff("Bob", "Smith", 28.50);
+        Faculty emp1 = new Faculty("Steve", "Jenkins", 75000);
+        Staff emp2 = new Staff("Blart", "Peels", 28.50);
 
         Scanner input = new Scanner(System.in);
 
