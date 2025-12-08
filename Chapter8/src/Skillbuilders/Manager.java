@@ -22,7 +22,7 @@ public class Manager extends Employee
 	public String toString()
 	{
 		return(super.toString()
-				+ ", Manager"
-				+ "Salary: " + yearlySalary);
+				+ ", Manager "
+				+ "Salary: " + "$" +  yearlySalary);
 	}
 }
